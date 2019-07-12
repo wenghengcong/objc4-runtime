@@ -411,8 +411,7 @@ objc_object::clearDeallocating()
 }
 
 
-inline void
-objc_object::rootDealloc()
+inline void objc_object::rootDealloc()
 {
     if (isTaggedPointer()) return;  // fixme necessary?
 
